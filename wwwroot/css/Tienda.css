@@ -1,12 +1,18 @@
 ﻿.main-container {
-    background-image: url('/src/img/Chat.png');
+    background-image: url('/src/img/Tienda.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-bottom: 100%;
     padding-left: 100%;
     padding-right: 100%;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     background-position: center center;
-    background-color: black; 
+    background-color: black;
+}
+
+.BtLogout {
+    background-color: red;
+    height: 50px;
+    width: 50px;
 }

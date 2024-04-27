@@ -37,6 +37,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Tienda()
+    {
+        return View();
+    }
+
+    public IActionResult ListUsers()
+    {
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Tienda";
+}
+
+<head>
+    <link href="~/css/Tienda.css" rel="stylesheet" />
+</head>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.keyCode === 27) {
+            window.location.href = '/Home/GameMain';
+        } else if (event.keyCode === 111 || event.keyCode === 79) {
+            window.location.href = '/Home/Index';
+        } else if (event.keyCode === 112 || event.keyCode === 80) {
+            window.location.href = '/Home/ListUsers';
+        }
+    }
+
+    document.addEventListener('keydown', handleKeyPress);
+</script>
+

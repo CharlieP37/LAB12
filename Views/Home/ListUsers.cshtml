@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "ListUsers";
+}
+
+<head>
+    <link href="~/css/ListUsers.css" rel="stylesheet" />
+    <img src="/src/img/Tienda.jpeg" alt="Fondo" width="4000" height="1000">
+
+</head>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.keyCode === 27) {
+            window.location.href = '/Home/Tienda';
+        } 
+    }
+
+    document.addEventListener('keydown', handleKeyPress);
+</script>
+
