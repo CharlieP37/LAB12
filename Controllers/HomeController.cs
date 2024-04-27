@@ -20,7 +20,10 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        Console.WriteLine("Privacy");
+        return View();
+    }
+    public IActionResult Login()
+    {
         return View();
     }
 
