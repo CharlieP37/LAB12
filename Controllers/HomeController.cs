@@ -60,8 +60,20 @@ public class HomeController : Controller
         SqlCommand cmd = new SqlCommand(query, con);
 
         var result = cmd.ExecuteReader();
-        
-        return View(result);
+
+        List<Player> resultList = new List<Player>();
+        while (result.Read())
+        {
+            Player entity = new Player();
+            entity.username = (string)result["username"];
+            entity.region = (string)result["name"];
+            entity.skin = (string)result["name"];
+            // ...
+            //
+            resultList.Add(entity);
+        }
+
+        return View(resultList);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
