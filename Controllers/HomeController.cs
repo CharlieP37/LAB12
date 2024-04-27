@@ -2,6 +2,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LAB12.Models;
 using Microsoft.Data.SqlClient;
+using LAB12.Logs;
+
+
 
 namespace LAB12.Controllers;
 
@@ -16,35 +19,42 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Logg.Log("Se ha cargado la pagina de menu principal");
         return View();
     }
 
     public IActionResult Privacy()
     {
+        Logg.Log("Se ha cargado la pagina de privacidad");
         return View();
     }
     public IActionResult Login()
     {
+        Logg.Log("Se ha cargado la pagina de login");
         return View();
     }
     
     public IActionResult GameMain()
     {
+        Logg.Log("Se ha realizado el log in con exito y se cargo el juego");
         return View();
     }
 
     public IActionResult GameChat()
     {
+        Logg.Log("Se ha abierto el chat de juego");
         return View();
     }
 
     public IActionResult Tienda()
     {
+        Logg.Log("Se ha abierto la tienda de juego");
         return View();
     }
 
     public IActionResult ListUsers()
     {
+        Logg.Log("Se ha cargado la pagina de usuarios dentro del servidor");
         return View();
     }
 
