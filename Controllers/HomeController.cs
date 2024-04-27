@@ -48,7 +48,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ListUsers2() { 
+    public IActionResult ListaUsers2() { 
         string ConnectionString = "Data Source=tcp:DESKTOP-JQA6K8K,49172;Initial Catalog=LAB12AD;Persist Security Info=True;User ID=LABUSER;Password=LAB12;Encrypt=False;Trust Server Certificate=True";
         
         SqlConnection con = new SqlConnection(ConnectionString);
