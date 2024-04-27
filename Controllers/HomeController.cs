@@ -55,7 +55,7 @@ public class HomeController : Controller
 
         con.Open();
 
-        string query = "";
+        string query = "select pl.username, rg.name, sk.name from PLAYERUSER pl\r\n\tinner join INVENTORY iv\r\n\t\ton pl.Id_PlayerUser = iv.Id_PlayerUser\r\n\tinner join COSMETIC cs\r\n\t\ton cs.Id_Inventory = iv.Id_Inventory\r\n\tinner join SKIN sk\r\n\t\ton sk.Id_Skin = cs.Id_Skin\r\n\tinner join REGION rg\r\n\t\ton rg.Id_Region = pl.Id_Region";
         
         SqlCommand cmd = new SqlCommand(query, con);
 
