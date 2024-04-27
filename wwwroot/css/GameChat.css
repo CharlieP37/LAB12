@@ -1,0 +1,12 @@
+﻿.main-container {
+    background-image: url('/src/img/Chat.png');
+    background-size: contain; /* Ajusta el tamaño para mostrar toda la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 100%;
+    padding-left: 100%;
+    padding-right: 100%;
+    margin-bottom: 50px; /* Ajusta el margen inferior para dar espacio al footer */
+    background-position: center center;
+    background-color: black; /* Color de fondo negro */
+}

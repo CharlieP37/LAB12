@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Main";
+}
+
+<head>
+    <link href="~/css/GameMain.css" rel="stylesheet" />
+</head>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) {
+            window.location.href = '/Home/GameChat';
+        }
+    }
+
+    document.addEventListener('keypress', handleKeyPress);
+</script>
